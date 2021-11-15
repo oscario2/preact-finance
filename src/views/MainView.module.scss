@@ -1,0 +1,8 @@
+div#app {
+    display: flex;
+}
+
+div.orderbook-component {
+    display: flex;
+    flex-direction: row-reverse;
+}

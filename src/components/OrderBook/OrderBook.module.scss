@@ -1,0 +1,25 @@
+@import "../../styles/index.scss";
+
+div.order-book {
+    width: 300px;
+    font-size: 14px;
+
+    div.order-book-last-price {
+        display: flex;
+        justify-content: center;
+    }
+
+    li.order-list-entry {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+        &.order-list-entry--hover {
+            background: var(--clr-rgba-cta-30) !important;
+        }
+
+        &.order-list-entry--significant {
+            background: var(--clr-borderWeaker);
+        }
+    }
+}

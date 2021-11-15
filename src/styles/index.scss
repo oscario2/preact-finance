@@ -1,0 +1,43 @@
+
+@import "_colors.scss";
+
+html {
+    font-family: Hack, monospace;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: var(--clr-textStrong);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    outline-width: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.clr-text-weak {
+    color: var(--clr-textWeak);
+}
+
+.clr-long-fill {
+    color: var(--clr-longFill)
+}
+
+.clr-short-fill {
+    color: var(--clr-shortFill)
+}
+
+.clr-long-highlight {
+    color: var(--clr-longHighlight)
+}
+
+.clr-short-highlight {
+    color: var(--clr-shortHighlight)
+}

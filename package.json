@@ -1,0 +1,20 @@
+{
+    "name": "preact-finance",
+    "version": "1.0.0",
+    "type": "module",
+    "module": "esm",
+    "scripts": {
+        "start.dev": "start npm run backend.dev & start npm run bundle.dev",
+        "backend.dev": "node ./backend/http-server.mjs dev",
+        "bundle.dev": "node esbuild.mjs dev",
+        "start.pro": "start npm run backend.dev & start npm run bundle.dev",
+        "backend.pro": "node ./backend/http-server.mjs",
+        "bundle.pro": "node esbuild.mjs"
+    },
+    "devDependencies": {
+        "esbuild": "^0.13.9",
+        "preact": "^10.5.15",
+        "preact-router": "^3.2.1",
+        "ws": "^8.2.3"
+    }
+}

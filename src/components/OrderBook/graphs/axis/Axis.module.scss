@@ -1,0 +1,22 @@
+
+.order-book {
+    border: 1px solid var(--clr-borderWeak);
+    padding: 10px;
+}
+
+.order-book-last-price {
+    font-size: 25px;
+}
+
+.depth-chart-grid {
+    border-left: 1px solid var(--clr-borderWeak);
+}
+
+.depth-combo {
+    position: relative;
+}
+
+#depth-axis {
+    position: absolute;
+    left: 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>preact-finance</title>
+    <link rel="stylesheet" type="text/css" href="public/scripts/dev.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        // hotreload if dev
+        function reload() {
+            const ws = new WebSocket("ws://127.0.0.1:8080")
+            ws.onopen = () => {
+                console.log("hot-reload open")
+            }
+            ws.onmessage = () => {
+                window.location.reload();
+            }
+
+            ws.onclose = () => {
+                setTimeout(() => reload(), 1000);
+            }
+        }
+
+        reload();
+    </script>
+
+    <script src="/public/scripts/dev.js"></script>
+</body>
+
+</html>
